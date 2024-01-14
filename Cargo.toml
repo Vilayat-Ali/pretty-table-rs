@@ -2,7 +2,7 @@
 name = "pretty-table"
 description = "An easy-to-use crate for printing pretty tables or writing them to a file!"
 authors = ["Syed Vilayat Ali Rizvi <vilayatcodemysite@gmail.com>"]
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "MIT"
 

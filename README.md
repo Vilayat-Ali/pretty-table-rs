@@ -32,30 +32,40 @@ cargo add pretty-table
 Consider this quick example to get started.
 
 ```rust
-use pretty_table::Table;
+use pretty_table::prelude::*;
 
 fn main() {
-    let data: Vec<Vec<&str>> = vec![
-        vec!["Name", "Age", "Country"],
-        vec!["Alice", "25", "Wonderland"],
-        vec!["Bob", "30", "Bobland"],
+    // define your table as 2-D vectors where all vectors must have `EQUAL` lengths
+    let table_data = vec![
+        vec!["Name", "Age", "Salary"], // header
+        vec!["Altmann", "45", "11.0k"],
+        vec!["Bezos", "32", "99.34k"],
+        vec!["Pichai", "56", "9.9m"],
+        vec!["Cook", "43", "8.2m"],
     ];
 
-    let table = Table::from(data);
-    table.print();
+    // print to terminal/standard output
+    print_table!(table_data.clone());
+
+    // write to file
+    write_table_to_file("table.txt", table_data);
 }
 ```
 
 Output:
 
 ```shell
-+=======+=====+============+
-| Name  | Age | Country    |
-+=======+=====+============+
-| Alice | 25  | Wonderland |
-+-------+-----+------------+
-| Bob   | 30  | Bobland    |
-+-------+-----+------------+
++=========+=====+========+
+|  Name   | Age | Salary |
++=========+=====+========+
+| Altmann | 45  | 11.0k  |
++---------+-----+--------+
+|  Bezos  | 32  | 99.34k |
++---------+-----+--------+
+| Pichai  | 56  |  9.9m  |
++---------+-----+--------+
+|  Cook   | 43  |  8.2m  |
++---------+-----+--------+
 
 ```
 
