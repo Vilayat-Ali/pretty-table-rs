@@ -1,3 +1,6 @@
+//! # Table
+//!
+
 use crate::TableOptions;
 use std::ops::Div;
 
@@ -5,10 +8,9 @@ const THIN_HR_LINE_CHAR: &'static str = "-";
 const THICK_HR_LINE_CHAR: &'static str = "=";
 const THIN_VR_LINE_CHAR: &'static str = "|";
 
-pub(crate) fn generate_table_string_vec<S>(
-    rows: Vec<Vec<S>>,
-    options: Option<TableOptions>,
-) -> Vec<String>
+/// This is a utility function used to convert raw 2-D Vectors of strings into a formatter vector of strings
+/// that represents table structure.
+pub fn generate_table_string_vec<S>(rows: Vec<Vec<S>>, options: Option<TableOptions>) -> Vec<String>
 where
     S: Into<String>,
 {

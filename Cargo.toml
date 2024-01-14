@@ -1,5 +1,7 @@
 [package]
 name = "pretty-table"
+description = ""
+authors = ["Syed Vilayat Ali Rizvi <vilayatcodemysite@gmail.com>"]
 version = "0.1.0"
 edition = "2021"
 
