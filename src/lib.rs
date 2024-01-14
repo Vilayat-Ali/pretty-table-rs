@@ -52,9 +52,15 @@ pub mod error;
 pub mod prelude;
 pub mod table;
 
+/// This is the structs for storing additional options that one may like to apply to his tables.
+///
+/// ## Options Fields
+///
+/// 1. `max_rows`: It refers to the maximum number of rows to be displayed in the tables. Suppose, if we have data for a table that might have `1000 rows` but we passed `max_rows` to be 200 then only rows from 0 (header row) till 199th row (since vectors are zeroth-indexed) will be displayed. Leaving it as None will display entire table.
+///
+/// 3. `only_display_cols`: If there are only certain columns that you want to display then pass indices of those columns as a vector. Passing `None` here makes all columns to be displayed in the data set.
 pub struct TableOptions {
     pub max_rows: Option<usize>,
-    pub max_cols: Option<usize>,
     pub only_display_cols: Option<Vec<usize>>,
 }
 
@@ -62,7 +68,6 @@ impl Default for TableOptions {
     fn default() -> Self {
         TableOptions {
             max_rows: None,
-            max_cols: None,
             only_display_cols: None,
         }
     }
