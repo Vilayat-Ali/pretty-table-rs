@@ -18,7 +18,7 @@ Add Pretty Table to your `Cargo.toml` file:
 
 ```toml
 [dependencies]
-pretty-table = "0.1.1"
+pretty-table = "0.1.3"
 ```
 
 Or, run the command at the root of your project
