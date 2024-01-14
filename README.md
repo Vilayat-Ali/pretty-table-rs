@@ -46,6 +46,18 @@ fn main() {
 }
 ```
 
+Output:
+
+```shell
++-------+-----+------------+
+| Name  | Age | Country    |
++-------+-----+------------+
+| Alice | 25  | Wonderland |
+| Bob   | 30  | Bobland    |
++-------+-----+------------+
+
+```
+
 Explore more examples at `/examples` directory in this repository.
 
 ## Documentation
