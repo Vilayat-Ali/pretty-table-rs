@@ -4,6 +4,7 @@ pub mod table;
 
 use error::Error;
 use std::fmt::{Debug, Display};
+// use table::generate_table_string_vec;
 
 pub trait Tabluate<T>
 where
