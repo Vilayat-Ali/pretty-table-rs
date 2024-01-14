@@ -1,6 +1,6 @@
-# Pretty Table
-
-![Pretty Table Logo](link_to_your_logo_or_image)
+<div align="center">
+  <img src="./assets/logo.png" alt="Your Image Description" style="width: 100%; max-width: 800px;">
+</div>
 
 **Pretty Table** is a Rust crate designed to make your life easier when it comes to formatting and displaying 2-D vectors in a visually appealing tabular format. Whether you're working with strings, numbers, or custom types that implement the `Into<String>` trait, Pretty Table has got you covered.
 
