@@ -1,9 +1,10 @@
 [package]
 name = "pretty-table"
-description = ""
+description = "An easy-to-use crate for printing pretty tables or writing them to a file!"
 authors = ["Syed Vilayat Ali Rizvi <vilayatcodemysite@gmail.com>"]
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
